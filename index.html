@@ -10,11 +10,32 @@
     <marquee behavior="" direction="">Iphone 11 pro price</marquee>
     <div class="con">
         <img src="apple.jpg"  class="img-fluid rounded mx-auto d-block">
-        <button>add the quntity</button>
-        <button>Remove the quntity
-        </button>
+        <p>
+            the price of the i phone is <span id="id">1</span>
+        </p>
+        <p>the price of iphone is <span id="id1">14000</span></p>
+        <button onclick="increement()">add the quntity</button>
+        <button onclick="decriment()">Remove the quntity</button>
+        <button onclick="price()">price of iphone is</button>
     </div>
-   
+    <script>
+        function increement(){
+            const quantityElement = document.getElementById("id");
+            const quantity = parseInt(quantityElement.innerText);
+            quantityElement.innerText = quantity + 1;
+
+        }
+        function decreement(){
+            const quantityElement = document.getElementById("quantity");
+            const quantity = parseInt(quantityElement.innerText);
+            quantityElement.innerText = quantity - 1;
+
+        }
+        function price(){
+            const priceElement=dcoument.getElementById("id1")
+            priceElement.innerText=quantity*15000;
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
